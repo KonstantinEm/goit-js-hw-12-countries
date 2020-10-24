@@ -4,27 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-js-hw-12-countries</title>
-    <link
+    <!-- <link
       href="node_modules/@pnotify/core/dist/PNotify.css"
       rel="stylesheet"
       type="text/css"
-    />
+    /> -->
   </head>
 
   <body>
-    <form class="form-inline search-form js-search-form">
-      <div class="form-group mx-sm-3 mb-2">
-        <label for="searchQuery" class="sr-only"></label>
-        <input
-          type="text"
-          class="form-control"
-          name="query"
-          id="searchQuery"
-          placeholder="Search country  "
-          autocomplete="off"
-        />
-      </div>
-      <ul class="articles js-articles"></ul>
-    </form>
+    <div class="first-section">
+      <p class="first-text">Поиск страны</p>
+      <p class="second-text">Введи название страны на английском языке</p>
+      <input id="js-input" class="main-input" type="text" />
+    </div>
+
+    <div class="item">
+      <ul id="js-list"></ul>
+    </div>
   </body>
 </html>

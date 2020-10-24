@@ -1,50 +1,72 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    /*
-   * CSS image reference example.
-   */
-    background-image: url('./images/bg-pattern.png');
+  background-image: url('./images/bg-pattern.png');
 }
 
-.form-inline {
-    text-align: center;
+.first-section {
+  margin: 0 auto;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
 }
 
-.form_country {
-    display: flex;
-    justify-content: center;
+.first-text {
+  margin: 0 0 20px 0;
+  padding: 0 15px;
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #555353;
 }
 
-.flag {
-    width: 350px;
-    height: 335px;
+.second-text {
+  margin: 0 0 30px 0;
+  padding: 0 15px;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  color: #555353;
 }
 
-.text {
-    font-weight: bold;
+.main-input {
+  border: solid 2px #555353;
+  border-radius: 5px;
+  height: 35px;
+  width: 350px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
-.form-control {
-    font-size: 28px;
-    line-height: 1.2;
-    text-align: center;
-    margin: 40px;
-    width: 538px;
+.item-name {
+  text-align: center;
 }
 
-.listCountry {
-    font-size: 24px;
-    font-weight: bold;
-    max-width: 500px;
-    text-align: left;
-    margin: 0 auto;
+.country-item {
+  display: flex;
+  width: 600px;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.item-image {
+  width: 300px;
+  height: auto;
+  align-items: center;
+  justify-content: space-between;
 }
